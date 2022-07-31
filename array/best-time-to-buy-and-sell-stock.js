@@ -1,5 +1,5 @@
 /**
- * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock
  * 
  * @param {number[]} prices
  * @return {number}

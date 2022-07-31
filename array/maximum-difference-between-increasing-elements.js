@@ -1,5 +1,5 @@
 /**
- * https://leetcode.com/problems/maximum-difference-between-increasing-elements/submissions/
+ * https://leetcode.com/problems/maximum-difference-between-increasing-elements
  * 
  * @param {number[]} nums
  * @return {number}
