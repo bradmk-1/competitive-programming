@@ -7,7 +7,6 @@
  */
 const topKFrequent = (nums, k) => {
     const numsCount = new Map();
-    const mostFreq = [];
 
     for (num of nums) {
         if (numsCount.has(num)) {
