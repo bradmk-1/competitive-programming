@@ -16,24 +16,26 @@ const twoSumBruteForce = function(numbers, target) {
 };
 
 /**
- *
- *
- * @param {number[]} nums
+ * 
+ * 
+ * @param {number[]} numbers
  * @param {number} target
  * @return {number[]}
  */
-const twoSumOptimized = (nums, target) => {
-    const tracker = new Map();
+const twoSumOptimized = function(numbers, target) {
+    let lPtr = 0;
+    let rPtr = numbers.length - 1;
 
-    for (let i = 0; i < nums.length; i++) {
-        const ntf = target - nums[i];
-        
-        if (tracker.has(ntf)) {
-            return [i, tracker.get(ntf)];
+    while (lPtr < rPtr) {
+        if (numbers[lPtr] + numbers[rPtr] === target) {
+            return [lPtr + 1, rPtr + 1];
+        } else if (numbers[lPtr] + numbers[rPtr] > target) {
+            rPtr--;
         } else {
-            tracker.set(nums[i], i);
+            lPtr++;
         }
-    };
+     };
+    
 };
 
 
