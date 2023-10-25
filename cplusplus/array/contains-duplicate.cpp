@@ -14,3 +14,5 @@ public:
         return false;
     }
 };
+
+//https://leetcode.com/problems/contains-duplicate/
