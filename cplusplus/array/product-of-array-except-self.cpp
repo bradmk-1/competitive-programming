@@ -27,6 +27,26 @@ public:
 
         return prefix;
     }
+    vector<int> productExceptSelfOptimized(vector<int>& nums) {
+        int range = nums.size();
+        vector<int> output{};
+
+        int product{ 1 };
+
+        for (int i = 0; i < range; i++) {
+            output.push_back(product);
+            product *= nums[i];
+        }
+
+        product = 1;
+
+        for (int i = range - 1; i >= 0; i--) {
+            output[i] *= product;
+            product *= nums[i];
+        }
+
+        return output;
+    }
 };
 
 //https://leetcode.com/problems/product-of-array-except-self
