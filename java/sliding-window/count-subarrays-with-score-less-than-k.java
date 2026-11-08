@@ -5,7 +5,7 @@ class Solution {
         int l = 0, r = 0;
 
         while (r < nums.length) {
-            sum += nums[r];4
+            sum += nums[r];
 
             while (sum * (r - l + 1) >= k && l <= r) {
                 sum -= nums[l];
